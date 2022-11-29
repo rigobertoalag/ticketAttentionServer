@@ -44,6 +44,10 @@ io.on("connection", (socket) => {
     })
 })
 
+server.get('/', (req, res) => {
+    res.send('hola')
+})
+
 server.listen(PORT, () => {
     console.log('SERVER RUNNING IN PORT: ', PORT)
 })
