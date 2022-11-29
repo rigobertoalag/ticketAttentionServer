@@ -44,7 +44,7 @@ io.on("connection", (socket) => {
     })
 })
 
-server.get('/', (req, res) => {
+app.get('/', (req, res) => {
     res.send('hola')
 })
 
