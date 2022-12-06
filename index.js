@@ -12,7 +12,8 @@ const server = http.createServer(app)
 
 const io = new Server(server, {
     cors: {
-        origin: "https://ticket-attention.vercel.app",
+        origin: "https://ticket-attention.vercel.app", //PRODUCTION
+        //origin: "http://localhost:3000", //DEV
         methods: ["GET", "POST"]
     }
 })
